@@ -1,0 +1,64 @@
+/**** contenedores ****/
+.contenedor {
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.alinear-h {
+  width: 70%;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+}
+
+.ancho-1 {
+  position: relative;
+  width: 25%;
+  height: auto;
+  min-height: 1px;
+  overflow: auto;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+  float: left;
+}
+
+.ancho-2 {
+  position: relative;
+  width: 50%;
+  height: auto;
+  min-height: 1px;
+  overflow: auto;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+  float: left;
+}
+
+/*duh*/
+.ancho-3 {
+  position: relative;
+  width: 75%;
+  height: auto;
+  min-height: 1px;
+  overflow: auto;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+  float: left;
+}
+
+.ancho-4 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 1px;
+  overflow: auto;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+  float: left;
+}
+/*----- TERMINA Código _contenedores.scss ----- */

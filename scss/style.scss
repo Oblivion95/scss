@@ -1,0 +1,28 @@
+@import "contenedores";
+@import "cabecera";
+
+/*----- INICIA Código CSS -----*/
+/*dus*/
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333333;
+}
+
+p,span {
+  color: #333333;
+}
+
+img {
+  background: grey;
+}
+
+/*----- TERMINA Código CSS -----*/
+
+

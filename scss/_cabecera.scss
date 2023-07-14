@@ -1,0 +1,27 @@
+/*----- INICIA Código _cabecera.scss ----- */
+
+/**** cabecera ****/
+
+.cabecera {
+  background: #005a71;
+}
+
+  .cabecera h1 {
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .cabecera .menu {
+    margin: 1rem 0;
+  }
+
+    .cabecera .menu .enlace {
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+      .cabecera .menu .enlace:hover {
+        color: #ffc500;
+      }
+/*----- TERMINA Código _cabecera.scss ----- */
