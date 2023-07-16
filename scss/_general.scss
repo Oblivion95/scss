@@ -1,0 +1,37 @@
+body {
+  font: sans-serif 12px;
+  line-height: 13px;
+  color: $texto-neutro;
+}
+
+.contenedor {
+  @include bloque-basico(100%, null, 5px 0);
+  &__fila {
+    @include bloque-basico(100%, 0 10px, 0);
+    &__columna {
+      @include bloque-basico(50%, 0 10px);
+    }
+  }
+}
+
+.tarjeta {
+  @include bloque-basico(50%, 10px, 0);
+
+  &__img {
+    @include bloque-basico(100%);
+
+    &:hover {
+      box-shadow: 0 0 3px #666666;
+    }
+  }
+
+  &__desc {
+    @include bloque-basico(100%, 10px);
+    h3 {
+      color: #00a560;
+    }
+    p {
+      color: #669999;
+    }
+  }
+}

@@ -4,24 +4,24 @@
 
 .cabecera {
   background: #005a71;
-}
 
-  .cabecera h1 {
+  h1 {
     margin: 1rem 0;
     font-size: 2rem;
-    color: #ffffff;
+    color: $texto-claro;
   }
 
-  .cabecera .menu {
+  .menu {
     margin: 1rem 0;
-  }
 
-    .cabecera .menu .enlace {
+    .enlace {
       font-size: 1.2rem;
-      color: #ffffff;
-    }
+      color: $texto-claro;
 
-      .cabecera .menu .enlace:hover {
-        color: #ffc500;
+      &:hover {
+        color: $texto-resalta;
       }
+    }
+  }
+}
 /*----- TERMINA Código _cabecera.scss ----- */

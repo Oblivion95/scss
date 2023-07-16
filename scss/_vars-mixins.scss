@@ -1,0 +1,18 @@
+$texto-neutro: #333333;
+$texto-claro: #ffffff;
+$texto-resalta: #ffc500;
+
+@mixin bloque-basico($ancho: 100%, $padding: null, $margin: null) {
+  position: relative;
+  display: block;
+  width: $ancho;
+  height: auto;
+
+  @if $margin {
+    margin: $margin;
+  }
+
+  @if $padding {
+    padding: $padding;
+  }
+}

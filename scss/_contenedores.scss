@@ -1,20 +1,17 @@
 /**** contenedores ****/
-.contenedor {
-  width: 100%;
-  position: relative;
-  height: auto;
-  margin: 0;
+
+@mixin posicion-cont($ancho, $margen) {
+  width: $ancho;
+  margin: $margen;
   padding: 0;
-  overflow: auto;
+}
+
+.contenedor {
+  @include posicion-cont(100%, 0);
 }
 
 .alinear-h {
-  width: 70%;
-  position: relative;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
-  overflow: auto;
+  @include posicion-cont(70%, 0 auto)
 }
 
 .ancho-1 {
