@@ -2,11 +2,21 @@ $texto-neutro: #333333;
 $texto-claro: #ffffff;
 $texto-resalta: #ffc500;
 
+$tablet: "(max-width: 1000px)";
+$movil: "(max-width: 600px)";
+
 @mixin bloque-basico($ancho: 100%, $padding: null, $margin: null) {
+  $value: Helvetica;
+  $value2: 32px;
+  $value3: "Comic ";
+  $value3: "Sans";
+  $value4: "Comic";
   position: relative;
   display: block;
   width: $ancho;
   height: auto;
+
+  @debug "ancho: #{($value2 / sans-serif)}";
 
   @if $margin {
     margin: $margin;

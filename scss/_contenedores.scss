@@ -11,51 +11,45 @@
 }
 
 .alinear-h {
-  @include posicion-cont(70%, 0 auto)
+  @include posicion-cont(70%, 0 auto);
+
+  @media #{$tablet} {
+    width: 80%;
+  }
+
+  @media #{$movil} {
+    width: 90%;
+  }
 }
 
-.ancho-1 {
-  position: relative;
-  width: 25%;
-  height: auto;
-  min-height: 1px;
-  overflow: auto;
-  padding: 0 0.75rem;
-  box-sizing: border-box;
-  float: left;
+@mixin debug($ancho) {
+  @debug "ancho es : #{$ancho}";
 }
 
-.ancho-2 {
-  position: relative;
-  width: 50%;
-  height: auto;
-  min-height: 1px;
-  overflow: auto;
-  padding: 0 0.75rem;
-  box-sizing: border-box;
-  float: left;
-}
+@include debug(100%);
 
-/*duh*/
-.ancho-3 {
-  position: relative;
-  width: 75%;
-  height: auto;
-  min-height: 1px;
-  overflow: auto;
-  padding: 0 0.75rem;
-  box-sizing: border-box;
-  float: left;
-}
+$i: 1;
 
-.ancho-4 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 1px;
-  overflow: auto;
-  padding: 0 0.75rem;
-  box-sizing: border-box;
-  float: left;
+@while $i < 5 {
+  .ancho-#{$i} {
+    position: relative;
+    width: $i * 25%;
+    height: auto;
+    min-height: 1px;
+    overflow: auto;
+    padding: 0 0.75rem;
+    box-sizing: border-box;
+    float: left;
+
+    $j: 1;
+
+    @while $j <= $i {
+      @debug $j;
+
+      $j: $j +1;
+    }
+    $list: 12px
+  }
+  $i: $i + 1;
 }
 /*----- TERMINA Código _contenedores.scss ----- */
