@@ -1,11 +1,10 @@
 @import "vars-mixins";
-@import "contenedores";
-@import "cabecera";
-@import "general";
 
 /*----- INICIA Código CSS -----*/
-/*dus*/
-
+$texto-neutro: #333333;
+$texto-claro: #ffffff;
+$texto-resalta: #ffc500;
+$texto-enlace: #007788;
 
 html {
   line-height: 1.15;
@@ -19,7 +18,8 @@ body {
   color: #333333;
 }
 
-p,span {
+p,
+span {
   color: #333333;
 }
 
@@ -27,6 +27,18 @@ img {
   background: grey;
 }
 
+a {
+  color: $texto-enlace;
+  &:hover {
+    color: lighten($texto-enlace, 10);
+  }
+}
+
+@import "contenedores";
+@import "cabecera";
+@import "general";
+@import "titulos";
+@import "formularios";
+@import "colores";
+@import "practica-arreglos";
 /*----- TERMINA Código CSS -----*/
-
-

@@ -1,0 +1,41 @@
+/*------ INICIA Código _formularios.scss -------*/
+/**** formularios ****/
+#{/* selector-append("input", "[type=text]") */
+  (unquote("input") unquote("[type=text]"))
+} {
+  min-width: 50%;
+  height: 2rem;
+  padding: 0 0.5rem;
+  position: relative;
+  margin: 1rem 0 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #333333;
+  $value-1: #fff;
+  $value_1: #000;
+
+  @debug "value-1 == value_2? #{$value-1 == $value_1}";
+}
+
+#{selector-nest(".casilla-gpo", ".casilla-ent")} {
+  position: relative;
+  display: inline-block;
+}
+
+.boton {
+  height: 2rem;
+  padding: 0 0.5rem;
+  position: relative;
+  margin: 1rem 0 0.5rem;
+  border-radius: 2px;
+  background: #00cc66;
+  border: 1px solid #00a866;
+  color: #ffffff;
+}
+
+#{selector-unify(".boton", ".boton-cancelar")} {
+  background: #ff3348;
+  border: 1px solid #c93348;
+}
+/*------ TERMINA Código _formularios.scss -------*/

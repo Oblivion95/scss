@@ -1,5 +1,8 @@
 /**** contenedores ****/
 
+$num-columnas: 6;
+$proporcion: 1 / $num-columnas;
+
 @mixin posicion-cont($ancho, $margen) {
   width: $ancho;
   margin: $margen;
@@ -30,10 +33,10 @@
 
 $i: 1;
 
-@while $i < 5 {
+@while $i < ($num-columnas + 1) {
   .ancho-#{$i} {
     position: relative;
-    width: $i * 25%;
+    width: percentage($proporcion * $i);
     height: auto;
     min-height: 1px;
     overflow: auto;
@@ -51,5 +54,60 @@ $i: 1;
     $list: 12px
   }
   $i: $i + 1;
+}
+
+@media #{$tablet} {
+  $i: 1;
+
+  @while $i < ($num-columnas + 1) {
+    .ancho-t#{$i} {
+      position: relative;
+      width: percentage($proporcion * $i);
+      height: auto;
+      min-height: 1px;
+      overflow: auto;
+      padding: 0 0.75rem;
+      box-sizing: border-box;
+      float: left;
+
+      $j: 1;
+
+      @while $j <= $i {
+        @debug $j;
+
+        $j: $j +1;
+      }
+      $list: 12px
+    }
+    $i: $i + 1;
+  }
+}
+
+@media #{$movil} {
+  $i: 1;
+
+@while $i < ($num-columnas + 1) {
+  .ancho-m#{$i} {
+    position: relative;
+    width: percentage($proporcion * $i);
+    height: auto;
+    min-height: 1px;
+    overflow: auto;
+    padding: 0 0.75rem;
+    box-sizing: border-box;
+    float: left;
+    background-color: red;
+
+    $j: 1;
+
+    @while $j <= $i {
+      @debug $j;
+
+      $j: $j +1;
+    }
+    $list: 12px
+  }
+  $i: $i + 1;
+}
 }
 /*----- TERMINA Código _contenedores.scss ----- */

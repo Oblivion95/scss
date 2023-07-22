@@ -1,0 +1,19 @@
+$aux: 0;
+$media_query: "(max-width: 800px)";
+
+@each $value in (1 2 3 4) {
+
+  .titulo#{$value} {
+    font-size: #{18 - $aux}px;
+    line-height: #{20 - $aux}px;
+    color: dark#{$value % 2 == 0 and 'red' or 'slateblue'};
+    @media #{$media_query} {
+      text-align: center;
+    }
+  }
+
+  $aux: $aux + 2;
+}
+
+
+
